@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.outer-div {
+			display: table;
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
+		.inner-div {
+		    display: table-cell;
+			vertical-align: middle;
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;			
+		}
+
+	</style>
+
+	<!--[if lt IE 8]>
+        <style type="text/css">
+			.outer-div {
+				position: relative;
+			}
+			.inner-div {
+				position: absolute;
+				top: 50%;				
+			}
+			.element {
+				position: relative;
+				top: -50%;
+			}
+        </style>
+    <![endif]-->
+</head>
+<body>
+	<div class="outer-div">
+		<div class="inner-div">
+			<div class="element">
+				<img src="images/select-image.png" alt="">
+			</div>
+		</div>		
+	</div>
+	<div class="outer-div">
+		<div class="inner-div">
+			<div class="element">
+				Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world Hello world 
+			</div>
+		</div>
+	</div>
+</body>
+</html>
